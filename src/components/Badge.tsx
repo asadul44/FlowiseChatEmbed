@@ -57,7 +57,7 @@ export const Badge = (props: Props) => {
       Powered by
       <a
         ref={liteBadge}
-        href={"https://bitsofts.io/"}
+        href={"https://bitsofts.io"}
         target="_blank"
         rel="noopener noreferrer"
         class="lite-badge"
@@ -67,7 +67,7 @@ export const Badge = (props: Props) => {
           color: props.poweredByTextColor ?? defaultTextColor,
         }}
       >
-        <span>Bitsofts</span>
+        <span> Bitsofts </span>
       </a>
     </span>
   );
