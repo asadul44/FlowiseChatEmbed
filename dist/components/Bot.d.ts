@@ -4,6 +4,7 @@ export type MessageType = {
     message: string;
     type: messageType;
     sourceDocuments?: any;
+    fileAnnotations?: any;
 };
 export type BotProps = {
     chatflowid: string;
@@ -15,7 +16,12 @@ export type BotProps = {
     textInput?: TextInputTheme;
     poweredByTextColor?: string;
     badgeBackgroundColor?: string;
+    bubbleBackgroundColor?: string;
+    bubbleTextColor?: string;
+    title?: string;
+    titleAvatarSrc?: string;
     fontSize?: number;
+    isFullPage?: boolean;
 };
 export declare const Bot: (props: BotProps & {
     class?: string;
