@@ -29,6 +29,7 @@ export const sendRequest = async <ResponseData>(
           : undefined,
       body: typeof params !== 'string' && isDefined(params.body) ? JSON.stringify(params.body) : undefined,
     });
+
     let data: any;
     const contentType = response.headers.get('Content-Type');
     if (contentType && contentType.includes('application/json')) {

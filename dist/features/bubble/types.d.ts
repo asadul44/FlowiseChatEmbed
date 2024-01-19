@@ -23,6 +23,11 @@ export type BotMessageTheme = {
     showAvatar?: boolean;
     avatarSrc?: string;
 };
+export type BotLoginTheme = {
+    backgroundColor: string;
+    iconColor: string;
+    customIconSrc: string;
+};
 export type ChatWindowTheme = {
     title?: string;
     titleAvatarSrc?: string;
@@ -35,6 +40,7 @@ export type ChatWindowTheme = {
     botMessage?: BotMessageTheme;
     textInput?: TextInputTheme;
     poweredByTextColor?: string;
+    loginInfo?: BotLoginTheme;
 };
 export type ButtonTheme = {
     size?: 'medium' | 'large';
